@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Jetpack Compose App template</string>
+    <string name="views_x">Viewed %s times</string>
+</resources>

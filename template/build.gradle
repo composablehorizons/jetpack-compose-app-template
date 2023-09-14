@@ -1,0 +1,103 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'org.jetbrains.kotlin.plugin.serialization' version "${kotlinVersion}"
+    id 'com.google.devtools.ksp' version "${kspVersion}"
+}
+
+android {
+    namespace 'com.composables.jetpackcomposetemplate'
+    compileSdk androidCompileSdk
+
+    defaultConfig {
+        applicationId "com.composables.jetpackcomposetemplate"
+        minSdk androidMinSdk
+        targetSdk androidCompileSdk
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary true
+        }
+    }
+
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility javaVersion
+        targetCompatibility javaVersion
+    }
+    kotlinOptions {
+        jvmTarget = javaVersion.toString()
+        freeCompilerArgs += [
+                '-opt-in=androidx.compose.material3.ExperimentalMaterial3Api',
+                '-opt-in=androidx.compose.animation.ExperimentalAnimationApi',
+                '-opt-in=com.google.accompanist.permissions.ExperimentalPermissionsApi',
+                '-opt-in=androidx.compose.ui.ExperimentalComposeUiApi',
+                '-opt-in=com.google.accompanist.pager.ExperimentalPagerApi',
+        ]
+    }
+    buildFeatures {
+        compose true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion composeCompilerVersion
+    }
+
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+}
+
+dependencies {
+    implementation "androidx.activity:activity-compose:${activityComposeVersion}"
+    implementation "androidx.compose.ui:ui:$composeUiVersion"
+    implementation "androidx.compose.ui:ui-tooling-preview:$composeUiVersion"
+    implementation "androidx.compose.material3:material3:${material3Version}"
+    implementation "androidx.compose.material3:material3-window-size-class:1.1.0"
+
+
+    implementation "com.google.accompanist:accompanist-permissions:${accompanistVersion}"
+
+
+    implementation "io.github.raamcosta.compose-destinations:core:$destinationsVersion"
+    ksp "io.github.raamcosta.compose-destinations:ksp:$destinationsVersion"
+
+    implementation "com.google.accompanist:accompanist-systemuicontroller:$accompanistVersion"
+    implementation "com.google.accompanist:accompanist-permissions:$accompanistVersion"
+
+
+    implementation "io.ktor:ktor-client-core:$ktorVersion"
+    implementation "io.ktor:ktor-client-cio:$ktorVersion"
+    implementation "io.ktor:ktor-client-content-negotiation:$ktorVersion"
+    implementation "io.ktor:ktor-serialization-kotlinx-json:$ktorVersion"
+    implementation "io.coil-kt:coil-compose:${coilVersion}"
+
+    testImplementation "junit:junit:${junitVersion}"
+    testImplementation("org.assertj:assertj-core:${assertJVersion}")
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutinesVersion"
+    testImplementation "androidx.arch.core:core-testing:${coreTestingVersion}"
+    testImplementation "app.cash.turbine:turbine:${turbineVersion}"
+
+    androidTestImplementation "androidx.test:rules:${testRulesVersion}"
+    androidTestImplementation "junit:junit:${junitVersion}"
+    androidTestImplementation("org.assertj:assertj-core:${assertJVersion}")
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4:$composeUiVersion")
+    androidTestImplementation("io.ktor:ktor-client-mock:$ktorVersion")
+
+    androidTestImplementation("io.ktor:ktor-client-mock:$ktorVersion")
+    debugImplementation "org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}"
+}
