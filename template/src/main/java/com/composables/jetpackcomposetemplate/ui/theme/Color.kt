@@ -1,4 +1,4 @@
-package co.composables.blaze.sample.ui.theme
+package com.composables.blaze.sample.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

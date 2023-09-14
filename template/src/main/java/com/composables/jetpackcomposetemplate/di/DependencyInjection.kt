@@ -1,4 +1,4 @@
-package co.composables.jetpackcomposetemplate
+package com.composables.jetpackcomposetemplate
 
 import android.app.Application
 import com.composables.jetpackcomposetemplate.core.AppReference

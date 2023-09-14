@@ -1,7 +1,7 @@
 package com.composables.jetpackcomposetemplate.details
 
 import androidx.lifecycle.viewModelScope
-import co.composables.jetpackcomposetemplate.PhotosRepository
+import com.composables.jetpackcomposetemplate.PhotosRepository
 import com.composables.jetpackcomposetemplate.core.AbstractViewModel
 import com.composables.jetpackcomposetemplate.home.Photo
 import com.composables.jetpackcomposetemplate.home.PhotoId

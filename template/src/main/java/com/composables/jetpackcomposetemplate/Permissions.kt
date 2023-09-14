@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalMaterial3WindowSizeClassApi::class)
 
-package co.composables.jetpackcomposetemplate
+package com.composables.jetpackcomposetemplate
 
 import android.Manifest
 import android.app.Activity

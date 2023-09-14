@@ -4,8 +4,8 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.core.view.WindowCompat
-import co.composables.blaze.sample.ui.theme.AppTheme
-import co.composables.jetpackcomposetemplate.PermissionRequired
+import com.composables.blaze.sample.ui.theme.AppTheme
+import com.composables.jetpackcomposetemplate.PermissionRequired
 import com.ramcosta.composedestinations.DestinationsNavHost
 
 

@@ -1,10 +1,10 @@
-package co.composables.blaze.sample.ui.theme
+package com.composables.blaze.sample.ui.theme
 
 import android.content.pm.ActivityInfo
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
-import co.composables.jetpackcomposetemplate.LockScreenOrientation
+import com.composables.jetpackcomposetemplate.LockScreenOrientation
 import com.composables.jetpackcomposetemplate.ui.TransparentSystemBars
 
 private val LightColorPalette = lightColorScheme(

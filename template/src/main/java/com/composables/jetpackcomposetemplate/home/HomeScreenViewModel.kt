@@ -1,7 +1,7 @@
 package com.composables.jetpackcomposetemplate.home
 
 import androidx.lifecycle.viewModelScope
-import co.composables.jetpackcomposetemplate.PhotosRepository
+import com.composables.jetpackcomposetemplate.PhotosRepository
 import com.composables.jetpackcomposetemplate.core.AbstractViewModel
 import kotlinx.coroutines.launch
 

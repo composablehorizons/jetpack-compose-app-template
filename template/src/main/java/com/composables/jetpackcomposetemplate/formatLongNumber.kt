@@ -1,4 +1,4 @@
-package co.composables.jetpackcomposetemplate
+package com.composables.jetpackcomposetemplate
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember

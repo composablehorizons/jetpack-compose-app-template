@@ -1,4 +1,4 @@
-package co.composables.blaze.sample.ui.theme
+package com.composables.blaze.sample.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Shapes

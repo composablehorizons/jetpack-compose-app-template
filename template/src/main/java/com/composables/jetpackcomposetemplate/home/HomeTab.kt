@@ -21,8 +21,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import co.composables.jetpackcomposetemplate.formatLongNumber
-import co.composables.jetpackcomposetemplate.homeScreenViewModel
+import com.composables.jetpackcomposetemplate.formatLongNumber
+import com.composables.jetpackcomposetemplate.homeScreenViewModel
 import com.composables.jetpackcomposetemplate.R
 import com.composables.jetpackcomposetemplate.ui.ContentCard
 import com.composables.jetpackcomposetemplate.ui.LoadingScreen

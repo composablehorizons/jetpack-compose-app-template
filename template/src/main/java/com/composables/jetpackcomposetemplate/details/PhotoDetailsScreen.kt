@@ -14,8 +14,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import co.composables.jetpackcomposetemplate.formatLongNumber
-import co.composables.jetpackcomposetemplate.photoDetailsViewModel
+import com.composables.jetpackcomposetemplate.formatLongNumber
+import com.composables.jetpackcomposetemplate.photoDetailsViewModel
 import com.composables.jetpackcomposetemplate.core.findActivity
 import com.composables.jetpackcomposetemplate.home.PhotoId
 import com.composables.jetpackcomposetemplate.ui.LoadingScreen

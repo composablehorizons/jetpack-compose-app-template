@@ -1,4 +1,4 @@
-package co.composables.jetpackcomposetemplate
+package com.composables.jetpackcomposetemplate
 
 import com.composables.jetpackcomposetemplate.apimodel.ApiPhoto
 import com.composables.jetpackcomposetemplate.home.Photo
