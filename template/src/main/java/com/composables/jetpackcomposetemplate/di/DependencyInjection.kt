@@ -6,8 +6,6 @@ import com.composables.jetpackcomposetemplate.details.PhotoDetailsViewModel
 import com.composables.jetpackcomposetemplate.di.httpClientFactory
 import com.composables.jetpackcomposetemplate.home.HomeScreenViewModel
 import com.composables.jetpackcomposetemplate.home.PhotoId
-import com.composables.jetpackcomposetemplate.permissions.AndroidSystemPermissions
-import com.composables.jetpackcomposetemplate.permissions.SystemPermissions
 
 fun applicationContext(): Application {
     return AppReference.requireApplication()

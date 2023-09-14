@@ -73,6 +73,11 @@ AppTheme {
 
 See `Permissions.kt` for more info.
 
+#### Optional permissions
+
+The template comes with an optional permissions launcher that you can use for permissions that should not block the user experience.
+
+See `OptionalPermission.kt`
 
 ## Bring your Jetpack Compose apps to life ultra-fast
 
