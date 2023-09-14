@@ -30,7 +30,7 @@ val homeViewModel = viewModel { homeScreenViewModel() }
 
 The template comes with an opinionated subclass of AndroidX' ViewModel called `AbstractViewModel`.
 
-It setups the boilerplate you need to handle states, events and user actions in a strongly typed fashion. See [HomeScreenViewModel.kt]
+It setups the boilerplate you need to handle states, events and user actions in a strongly typed fashion. See `HomeScreenViewModel.kt`
 
 Here is the signature:
 ```kotlin
@@ -49,7 +49,7 @@ class HomeScreenViewModel(
 )
 ```
 
-to bootstrap your `ViewModel` and start emitting states. See the [PhotoDetailsViewModel.kt] for a more complex example. 
+to bootstrap your `ViewModel` and start emitting states. See the `PhotoDetailsViewModel.kt` for a more complex example. 
 
 ### Navigation
 
@@ -71,7 +71,7 @@ AppTheme {
 }
 ```
 
-See [Permissions.kt] for more info.
+See `Permissions.kt` for more info.
 
 
 ## Bring your Jetpack Compose apps to life ultra-fast
