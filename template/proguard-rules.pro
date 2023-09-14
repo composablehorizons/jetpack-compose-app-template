@@ -21,6 +21,6 @@
 #-renamesourcefileattribute SourceFile
 
 
--keepnames @kotlin.Metadata class co.composables.jetpackcomposetemplate.apimodel.**
--keep class co.composables.jetpackcomposetemplate.apimodel.** { *; }
--keepclassmembers class co.composables.jetpackcomposetemplate.apimodel.** { *; }
+-keepnames @kotlin.Metadata class com.composables.jetpackcomposetemplate.apimodel.**
+-keep class com.composables.jetpackcomposetemplate.apimodel.** { *; }
+-keepclassmembers class com.composables.jetpackcomposetemplate.apimodel.** { *; }
