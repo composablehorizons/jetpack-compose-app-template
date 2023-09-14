@@ -57,4 +57,23 @@ The template uses [`Compose Destinations`](https://github.com/raamcosta/compose-
 
 This specific library is used as it provides a simple and type-safe way to navigate across screens, and saves you so much time from writing boilerplate code.
 
-See the original repo for more information
+See the original repo for more information.
+
+### Permissions
+
+Permissions are handled for you automatically. Instead of poluting your app with permissions checks, the template guards the app's content with a permission check:
+```kotlin
+AppTheme {
+    PermissionRequired(
+        onDenyClick = { finish() },
+        guardedContent = { /* Your app's content here */ }
+    )
+}
+```
+
+See [Permissions.kt] for more info.
+
+
+## Bring your Jetpack Compose apps to life ultra-fast
+
+With professionally crafted components, screens and tools at [Composables.com](https://www.composables.com).
