@@ -41,7 +41,7 @@ fun HomeTab(
             onPhotoClick = onPhotoClick
         )
 
-        HomeScreenState.Loading -> LoadingScreen("loading-home")
+        HomeScreenState.Loading -> LoadingScreen()
         HomeScreenState.Error -> ErrorScreen()
     }
 }

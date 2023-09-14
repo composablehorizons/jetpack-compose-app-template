@@ -10,7 +10,7 @@ import kotlinx.coroutines.launch
 
 sealed interface PhotoDetailsState {
     object Loading : PhotoDetailsState
-    data class Loaded(val photo: Photo) : PhotoDetailsState
+    data class Loaded(val photo: Photo, val favorite: Boolean) : PhotoDetailsState
     object Error : PhotoDetailsState
 }
 
@@ -24,7 +24,7 @@ class PhotoDetailsViewModel(
             val state = if (photo == null) {
                 PhotoDetailsState.Error
             } else {
-                PhotoDetailsState.Loaded(photo)
+                PhotoDetailsState.Loaded(photo, favorite = false)
             }
             emitState(state)
         }
